@@ -1,8 +1,18 @@
+/* 
+Course: COSC 365
+Name: Micah 
+
+This is the css file for a pie recipe webpage   
+*/
+
 body {
     font-size: 11pt;
     font-family:Georgia, Garamond,sans-serif;
     color: #404040;
     background-color: white;
+    margin: 5%;
+    margin-top: 0%;
+    background-image: url("images/silverware.jpg");
     }
 
 h1, h2{
@@ -10,7 +20,7 @@ h1, h2{
     background-color: #F0F0F0;
     font-family: Century Gothic, Futura, Verdana, sans-serif;
     text-decoration: underline;
-    
+    letter-spacing: 0.2em;
 }
 
 h1 {
@@ -27,4 +37,17 @@ a {
 
 blockquote {
     background-color: #FFFFC8;
+    font-style: italic;
    }
+ul {
+    list-style-image: url("images/pie_icon.gif");
+}
+
+img.gallery {
+   width:  256px;
+   height:  256px;  
+}
+div.gallery {
+    text-align: center;
+    word-spacing: 25px;
+}
