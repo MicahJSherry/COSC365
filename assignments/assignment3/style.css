@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.header {
+    color: white;
+    font-family: cursive;
+    background-color: #154c79; 
+}
+
+.container {
+    display: flex;
+}
