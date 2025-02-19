@@ -4,7 +4,7 @@ body {
     gap: 10%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: cornsilk;
-    }
+}
 
 .header {
     color: white;
@@ -29,6 +29,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .card {
     width: 300px;
     padding: 10px;
@@ -41,11 +42,17 @@ body {
     border-radius: 10px 20px;
     background-image: radial-gradient(paleturquoise, ivory)
 }
+
 .card hr {
     height: 2px;
     background-color:#eab678; 
-    
+ 
 }
+
+.card > p > img  {
+    width: 99%;
+}
+
 .reviews {
     font-family: 'Times New Roman', Times, serif;
     width: 200px;
@@ -56,15 +63,15 @@ body {
     rotate: -25deg;
     translate: 0px -100px;
 }
-.card > p> img  {
-    width: 99%;
-}
+
 .reviews > h2{
     color: green;
 }
+
 .reviewer {
     font-style: italic;
 }
+
 .reviewer + p{
     display:  flex;
 }
