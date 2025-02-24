@@ -23,7 +23,7 @@ body {
     text-decoration: none;
     padding:10px;  
     }
-  
+
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -52,7 +52,6 @@ body {
 .card hr {
     height: 2px;
     background-color:#eab678; 
- 
 }
 
 .card > p > img  {
@@ -80,4 +79,28 @@ body {
 
 .reviewer + p{
     display:  flex;
+}
+
+.schedule {
+    margin: 2.5%;
+    background-image: radial-gradient(paleturquoise, ivory);
+    border: 10px solid;
+    border-image: url("images/border.jpg") 15 round;
+    padding-bottom: 20px;
+    
+}
+.schedule > div{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    justify-content: center;
+}
+.schedule > div > h1 {
+    grid-column: 1 / 6;
+}
+.schedule > div > div {
+    margin: 2px;
+    padding: 12px;
+    border: ridge;
+    background: #eab678;    
+    
 }
