@@ -49,10 +49,9 @@ body {
     width: 400px;
     height: 500px;
     box-shadow: 20px 20px 10px;
-    
+    rotate: -360deg;
 }
 #germany:hover img{
-    
     box-shadow: 10px 10px 15px;
 }
 
