@@ -32,8 +32,7 @@ function display_playlist( $file){
 			<ul id="musiclist">
 				<?php
 				$playlist = $_REQUEST["playlist"];
-
-
+				
 				$folder = "songs";
 				if (isset($playlist) && $playlist != null){
 					$content = file_get_contents($folder . "/" . $playlist);
