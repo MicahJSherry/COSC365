@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.card {
+    width: 200px;
+    border: 2px solid green;
+    padding: 10px;
+    }
+
+.submit {
+    text-align: center;
+    }
