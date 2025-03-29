@@ -1,18 +1,38 @@
+body {
+    background-image: radial-gradient( rgb(227, 169, 169), rgb(213, 60, 91));
+}
+
 h1 {
     text-align: center;
+    border:5px ridge;
+    border-color :rgb(235, 231, 231);
+    background-color: rgb(245, 144, 164);
+
     }
 
 .container {
     display: flex;
     justify-content: space-evenly;
+    margin: 2.5%;
     }
 
 .card {
     width: 200px;
-    border: 2px solid green;
+    border: 5px ridge;
     padding: 10px;
     }
-
+.card > h3 {
+padding: 0%;
+margin: 0%;
+}
 .submit {
+    display: grid;
+    grid-template-columns: 500px 100px;
     text-align: center;
+    margin: 2.5%;
     }
+
+.summary {
+    border: 5px ridge;
+}
+

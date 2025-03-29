@@ -5,31 +5,35 @@
 
     <body>
         <h1> pizzazz pizza </h1>
-        <div class="container">
-            
-            <div class="card">
-                <h3>Size</h3>
-                <input type="radio" name="size" value="XL"> X-Large<br>
-                <input type="radio" name="size" value="L">  Large<br>
+        <form action="pizza.php" method="POST">
+            <div class="container">
+                
+                <div class="card">
+                    <h3>Size</h3> <hr>
+                    <input type="radio" name="size" value="XL"> X-Large<br>
+                    <input type="radio" name="size" value="L">  Large<br>
+                </div>
+                
+                <div class="card">
+                    <h3>Toppings</h3> <hr>
+                    <input type="checkbox" name="pep">Pepperoni<br>
+                    <input type="checkbox" name="mush">Mushroom<br>
+                </div>
+                
+                <div class="card">
+                    <h3>Crust</h3> <hr>
+                    <select name="crust">
+                        <option value="thin">Thin</option>
+                        <option value="original">Original</option>
+                        <option value="deep">Deep Dish</option>
+                    </select>
+                </div>
             </div>
-
-            <div class="card">
-                <h3>Toppings</h3>
-                <input type="checkbox" name="pep">Pepperoni<br>
-                <input type="checkbox" name="mush">Mushroom<br>
+            <div class="submit">
+            <div>Name: <input name="name" type="text"></div> 
+            <input type="submit">
             </div>
-            
-            <div class="card">
-                <h3>Crust</h3>
-                <select name="crust">
-                    <option value="thin">Thin</option>
-                    <option value="original">Original</option>
-                    <option value="deep">Deep Dish</option>
-                </select>
-            </div>
-        </div>
-        <input type="submit">
-
+        </form>
     </body>
 </html>
 
