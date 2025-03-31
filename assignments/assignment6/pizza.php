@@ -27,7 +27,7 @@
                 $price += 2.00;
             }
             $file = "pizza.txt";
-            $content = $name . ", " . $price."\n";
+            $content = $name . ", $" . number_format($price,2) . "\n";
         
             file_put_contents($file, $content);
             
