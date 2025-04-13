@@ -1,0 +1,49 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    border: 5px ridge;
+    border-color: rgb(255, 46, 88);
+    background-color: rgb(245, 144, 164);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5%;
+}
+
+.card {
+    width: 200px;
+    border: 5px ridge rgb(255, 46, 88);
+    padding: 10px;
+}
+
+.card>h3 {
+    padding: 0%;
+    margin: 0%;
+    color: rgb(255, 46, 88);
+}
+
+.submit {
+    display: grid;
+    grid-template-columns: 500px 100px;
+    text-align: center;
+    margin: 2.5%;
+}
+
+.summary {
+    border: 5px ridge;
+}
+
+.total-div {
+    text-align: center;
+    font-size: 16pt;
+}
+
+#pizzaImg {
+    display: fixed;
+    float: right;
+}
