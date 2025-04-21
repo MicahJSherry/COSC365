@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="grocery.css">
+        <script src="grocery.js"></script>
+    </head>
+    <body>
+        
+        <h1>Grocery List</h1>
+        <div> 
+            <fieldset id="itemCategory" legend="category">
+                <span><input type="radio" name="category" value="Dairy"> Dairy    </span>
+                <span><input type="radio" name="category" value="Bakery"> Bakery   </span>
+                <span><input type="radio" name="category" value="Cereal"> Cereal   </span>
+                <span><input type="radio" name="category" value="Beverage"> Beverage </span>
+            </fieldset>
+        </div>
+        <div id="itemInput"> 
+            <div id="itemQty"> Qty <br> <input type="text"></div>
+            <div id="itemName"> Item <br><input type="text"></div>
+            <div id="addItem"> <button type="button">Add</button></div>
+        </div>
+
+        <div id="itemDisplay"> number of items: <span id="total">0</span></div>
+        <hr>
+        <div id="list">
+            <div> <h2>Dairy    </h2> <ul id="Dairy"> </ul></div>
+            <div> <h2>Bakery   </h2> <ul id="Bakery"> </ul></div>
+            <div> <h2>Cereal   </h2> <ul id="Cereal"> </ul></div>
+            <div> <h2>Beverage </h2> <ul id="Beverage"> </ul></div>
+        </div>
+    </body>
+</html>

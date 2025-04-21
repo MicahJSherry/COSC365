@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    border: 3px ridge blue;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+h1 {
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 3px ridge blue;
+}
+
+#itemInput {
+    display:flex;
+}
+
+#itemInput > div {
+    margin: 50px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+#itemQty {
+    width: 10px;
+    
+}
+#itemQty input {
+    width: 50px;
+    
+}
+#addItem button {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#list {
+    display: flex;
+    
+    justify-content: space-around;
+    
+    
+}
+#itemCategory span {
+    margin: 20px;
+}
+#itemDisplay{
+    text-align: left;
+    margin: 10px;
+}
+#list h2{
+    width: 100px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 3px ridge blue;
+}
