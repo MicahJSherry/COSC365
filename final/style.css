@@ -1,7 +1,7 @@
 #calender {
     display: grid;
-    grid-template-rows: auto auto repeat(6, 1fr); /* Header, weekdays, and days */
-    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    grid-template-rows: auto auto repeat(6, 175px); /* Header, weekdays, and days */
+    grid-template-columns: repeat(7, 172px); /* 7 columns for days of the week */
     border: 5px ridge lightskyblue;
     margin: 30px auto;
     border-radius: 18px;
