@@ -1,0 +1,241 @@
+#calender {
+    display: grid;
+    grid-template-rows: auto auto repeat(6, 1fr); /* Header, weekdays, and days */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    border: 5px ridge lightskyblue;
+    margin: 30px auto;
+    border-radius: 18px;
+    background-color: lightcyan;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+}
+#calender h1 {
+    text-align: center;
+    background-color: aqua;
+    border: 2px ridge lightskyblue;
+    margin: 0;
+    grid-column: 1 / 8;
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#calender div {
+    background-color: lightcyan;
+    border: 2px ridge lightskyblue;
+    border-radius: 10px;
+    
+    
+    padding: 0px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#calender h3 {
+    text-align: center;
+    background-color: lightblue;
+    border: 2px ridge lightskyblue;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#calender div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: lightyellow;
+}
+#calender h4{
+    background-color: lightslategray;
+    border-radius: 5px;
+    border: 2px ridge slategray;
+    margin:0px;
+}
+
+#prevbutton, #nextbutton {
+    cursor: pointer;
+    border: ridge;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: slategray;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#prevbutton{
+    float:left;
+}
+#nextbutton{
+    float:right;
+} 
+#prevbutton:hover, #nextbutton:hover {
+    background-color: darkslategray;
+    transform: scale(1.1);
+}
+
+#daySchedule {
+    background-color: lightcyan;
+    border: 5px ridge lightskyblue;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#daySchedule h1 {
+    text-align: center;
+    background-color: aqua;
+    border: 2px ridge lightskyblue;
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: darkslategray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: lightslategray;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#day div {
+    background-color: white;
+    border: 2px ridge lightskyblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#day div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: lightyellow;
+}
+
+#day div h4 {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: skyblue;
+    border: 2px ridge blue;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#day div p {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.addEvent{
+    display: flex;
+    text-decoration: none;
+    color:black;
+    background-color: lightcyan;
+}
+.addEvent div{
+    padding: 10px;
+
+    display: flex;
+    align-items: space;
+}
+.addEvent label{
+    padding: 10px;
+}
+
+.nEvents{
+    background-color: lightgray;
+    border: 1px ridge ;
+    border-radius: 12px;
+}
+
+#addEvent {
+    background-color: lightcyan;
+    border: 2px ridge lightskyblue;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#addEvent h2 {
+    text-align: center;
+    color: darkslategray;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#addEvent div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#addEvent label {
+    font-size: 1em;
+    font-weight: bold;
+    color: darkslategray;
+    margin-right: 10px;
+    flex: 1;
+}
+
+#addEvent input, #addEvent textarea, #addEvent button {
+    flex: 2;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#addEvent textarea {
+    resize: none;
+    height: 80px;
+}
+
+#addEvent button {
+    background-color: slategray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addEvent button:hover {
+    background-color: darkslategray;
+    transform: scale(1.05);
+}
